@@ -46,6 +46,7 @@
 	<video id="k" poster="/apple-touch-icon.png" autoplay loop muted></video>
 
 	<footer>
+		<button onclick="k();">k</button>
 		by <a href="/">Haroen</a>
 	</footer>
 	<script>
@@ -91,8 +92,11 @@
 		"https://i.imgur.com/xr7JwjH.mp4",
 		"https://i.imgur.com/Qfi0nm7.mp4"
 		];
-		var k = Math.floor(Math.random() * (links.length));
-		document.getElementById('k').innerHTML = "<source src=\""+links[k]+"\" type=\"video/mp4\">"
+		var k = function() {
+			var k = Math.floor(Math.random() * (links.length));
+			document.getElementById('k').innerHTML = "<source src=\""+links[k]+"\" type=\"video/mp4\">";
+		}
+		k();
 	</script>
 </body>
 
