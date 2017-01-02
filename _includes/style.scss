@@ -1,7 +1,9 @@
 body {
   background-color: #7F1734;
   text-align: center;
-  height: 98vh;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -15,8 +17,8 @@ body {
 }
 
 video {
-  max-width: 98%;
-  max-height: 98%;
+  width: 100vw;
+  height: 100vh;
   cursor: pointer;
 }
 
